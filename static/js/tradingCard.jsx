@@ -13,7 +13,7 @@ function TradingCard(props) {
     <div className="card">
       <h2>Name: {props.name}</h2>
       <img src={props.imgUrl} alt="profile" />
-      <h2>Skill: {props.skills} </h2>
+      <h2>Skill: {props.skill} </h2>
     </div>
   );
 }
@@ -35,12 +35,12 @@ ReactDOM.render(
 
 ReactDOM.render(
   <TradingCard name="MerKitty" skill="creates rainbows with every spash" imgUrl="/static/img/merge.png" />,
-  document.querySelector('#balloonicorn'),
+  document.querySelector('#merkitty'),
 );
 
 
 ReactDOM.render(
-  <TradingCard name="Cat" skill="war survivor" imgUrl="/static/img/polymorphism.jpg" />,
+  <TradingCard name="Cat" skill="war survivor" imgUrl="/static/img/polymorphism.jpeg" />,
   document.querySelector('#warcat'),
 );
 
